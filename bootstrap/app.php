@@ -26,6 +26,7 @@ return Application::configure(basePath: dirname(__DIR__))
         
         // Make API routes use web middleware for Sanctum SPA authentication
         $middleware->api(prepend: [
+            \App\Http\Middleware\HandleCors::class,
             \Illuminate\Cookie\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
