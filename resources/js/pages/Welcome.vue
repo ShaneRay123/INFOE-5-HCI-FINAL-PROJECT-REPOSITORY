@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { dashboard, login, register } from '@/routes';
+// import { dashboard, login, register } from '@/routes';
+import { dashboard, login, register } from '../routes';
 import { Head, Link } from '@inertiajs/vue3';
 import { Ticket, Wrench } from 'lucide-vue-next';
 
@@ -25,7 +26,7 @@ withDefaults(
                     </div>
                     <span class="text-2xl font-bold text-gray-900 dark:text-white">Tech Ticket</span>
                 </div>
-                
+
                 <div class="flex items-center gap-4">
                     <Link
                         v-if="$page.props.auth.user"
@@ -71,7 +72,7 @@ withDefaults(
                 <h1 class="mb-6 text-5xl font-bold text-gray-900 dark:text-white md:text-6xl">
                     Welcome to <span class="text-primary">Tech Ticket</span>
                 </h1>
-                
+
                 <p class="mb-12 text-xl text-gray-600 dark:text-gray-300">
                     Your complete IT support ticket management system.<br />
                     Report issues, track progress, and get help faster.
