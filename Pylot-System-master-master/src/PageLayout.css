@@ -1,0 +1,225 @@
+.page-container {
+  padding: 1.5rem;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4a148c;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.page-header h2 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.back-img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: absolute;
+  left: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.search-bar {
+  margin-top: 0;
+  background: #ede7f6;
+  padding: 0.5rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.table-container {
+  margin-top: 1rem;
+  background: white;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #ede7f6;
+  color: #4a148c;
+}
+
+.start-btn, .module-btn, .quiz-btn, .exam-btn {
+  padding: 10px 18px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.start-btn {
+  background: transparent;
+}
+
+.start-btn:hover {
+  background: transparent;
+}
+
+.module-btn {
+  background: transparent;
+}
+
+.quiz-btn {
+  background: transparent;
+}
+
+.exam-btn {
+  background: transparent;
+}
+
+.download-btn {
+  padding: 10px 18px;
+  min-height: 40px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background: transparent;
+}
+
+.logo-img {
+  height: 40px;
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 15px;
+}
+
+.exam-table th,
+.exam-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.exam-table thead th {
+  background: #3b2573;
+  color: white;
+  font-weight: 1000;
+}
+
+.exam-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.badge.pre-assessment {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.badge.post-assessment {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.status-badge.inactive {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.exam-action-buttons button {
+  margin: 0px 10px;
+  padding: 6px 20px;
+  border: 1px solid transparent; 
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.exam-action-buttons button.edit-btn {
+  background-color: #2196F3;
+  color: white;
+  border: 1px solid #1976d2; 
+}
+
+.exam-action-buttons button.edit-btn:hover {
+  background-color: #1976d2;
+}
+
+
+.exam-action-buttons button.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: 1px solid #d32f2f; 
+}
+
+.exam-action-buttons button.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+

@@ -1,0 +1,386 @@
+
+.user-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--pylot-brand-700);
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  font-family: inherit;
+  position: relative;
+}
+
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+}
+
+.user-logo {
+  width: 80px;
+  height: auto;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
+.loading-text {
+  color: #ddd;
+  margin-top: 150px;
+  font-size: 18px;
+}
+
+
+.progress-section {
+  background: #f8f9fa;
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 140px auto 40px;
+  max-width: 800px;
+  text-align: left;
+  border: 1px solid #e9ecef;
+}
+
+.progress-section h3 {
+  margin-bottom: 15px;
+  color: #3b2573;
+}
+
+.progress-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.progress-badges .badge {
+  background: #e9ecef;
+  color: #666;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.progress-badges .badge.completed {
+  background: #4caf50;
+  color: white;
+}
+
+.progress-bar {
+  background: #e9ecef;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4caf50 0%, #45a049 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 8px;
+  color: #666;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.card {
+  width: 270px;
+  height: 310px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 22px;
+  position: relative;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-icon {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+
+.card-pre {
+  background: #6a1b9a;
+}
+
+.card-module {
+  background: #8d5cde;
+}
+
+.card-post {
+  background: #bca0dc;
+}
+
+.card-checkpoint {
+  background: #ff6b35;
+}
+
+
+.card.completed {
+  opacity: 0.7;
+}
+
+.checkmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+.card.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #6c757d;
+}
+
+.card.disabled:hover {
+  transform: none;
+}
+
+.locked-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.padlock-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+.user-dashboard.no-progress .card-grid {
+  margin-top: 120px;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .user-logo {
+    width: 60px;
+  }
+
+  .logout-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .progress-section {
+    margin-top: 120px;
+    padding: 18px;
+    transform: scale(0.98);
+  }
+
+  
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 35px;
+  }
+
+  .card {
+    width: 100%;
+    width: 200px;
+    max-width: 450px;
+    height: 80px;
+    font-size: 16px;
+    border-radius: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card p {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  
+  .card-icon,
+  .checkmark,
+  .locked-overlay span {
+    display: none !important;
+  }
+
+  
+  .card small,
+  .card span {
+    display: none !important;
+  }
+
+  
+  .no-progress .card-grid {
+    min-height: calc(100vh - 160px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .locked-overlay {
+    display: flex !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 6px;
+    border-radius: 999px;
+    gap: 0;
+  }
+
+  .padlock-icon {
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+  }
+}
+
+.locked-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.locked-modal {
+  width: min(360px, calc(100vw - 32px));
+  background: #ffffff;
+  color: #111;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.locked-modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #3b2573;
+}
+
+.locked-modal-body {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.locked-modal-actions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.locked-modal-btn {
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.locked-modal-btn:hover {
+  filter: brightness(1.05);
+}
+
+@media (max-width: 480px) {
+  .logout-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .card {
+    width: 100%;
+    width: 200px;
+    height: 70px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .card small,
+  .card span {
+    display: none !important;
+  }
+
+  .no-progress .card-grid {
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+
+
