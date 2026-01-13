@@ -1,0 +1,58 @@
+# Student Wellness Hub
+
+A comprehensive web application for student mental health assessments and counseling appointment management.
+
+## Installation
+
+1. Clone or download this repository to your XAMPP htdocs directory
+2. Import the database schema from `database.sql` 
+3. Access the application through your browser: `http://localhost/if0_40312270_db_userdata/`
+
+## Default Credentials
+
+- **Admin/Counselor**:
+  - Username: admin2@gmail.com
+  - Password: Admin123
+
+## System Requirements
+
+- PHP 7.2 or higher
+- MySQL 5.7 or higher
+- Apache web server
+
+## Database Setup Instructions
+
+### Database Import
+1. Open phpMyAdmin (http://localhost/phpmyadmin)
+2. Create a new database named `if0_40312270_db_userdata`
+3. Select the newly created database
+4. Click on the "Import" tab
+5. Choose the `database.sql` file from the project directory
+6. Click "Go" to import the database structure and default admin account
+
+### Administrator/Counselor:
+- Username: admin2@gmail.com
+- Password: Admin123
+- Register code for admin: SWHub2025
+
+## Technical Information
+- PHP 7.2+ required
+- MySQL/MariaDB database
+- Bootstrap 4.5 front-end framework
+- Font Awesome 5 icons
+
+## Project Members
+- Name	Role
+- Buarao	Front End & UI/UX Developer
+- Guilingen	Project Manager
+- Boston	Data Gathering
+- Zamora	Data Gathering
+
+## 📌 Notes
+
+Ensure Apache and MySQL are running before accessing the system.
+
+Use the correct database name to avoid connection issues.
+
+This project is intended for academic and educational purposes.
+
